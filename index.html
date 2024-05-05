@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Facilities</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+  <nav class="navbar">
+
+    <ul>
+        <a href="#"> <img
+                src="https://web.archive.org/web/20220520003024im_/https://www.asiasourceicollege.edu.ph/images/asic%20logo44x52.png"
+                class="logo"></a></li>
+        <li> <a href=""> Home </a> </li>
+        <li> <a href=""> About us </a> </li>
+        <li> <a href="">Programs Offered </a> </li>
+        <li> <a href=""> Updates </a> </li>
+        <li> <a href="">Admissions </a> </li>
+        <li> <a href=""> Contact Us </a> </li>
+
+    </ul>
+  </nav>
+  
+  <br><br>
+  <div class="oval-title-box-top">
+    <h1>Asia Source iCollege Facilities</h1>
+  </div>
+
+  <div class="container">
+    <br>
+    <div class="oval-title-box">
+      <h1>Taguig Facilities</h1>
+    </div>
+
+      <div class="image-container">
+        <div class="image"><img src="Taguig/img1.jpg" alt="Entrance"></div>
+        <div class="image"><img src="Taguig/img2.jpg" alt="Main Hall"></div>
+        <div class="image"><img src="Taguig/img3.jpg" alt="Student Lounge"></div>
+        <div class="image"><img src="Taguig/img4.jpg" alt="Room one"></div>
+        <div class="image"><img src="Taguig/img5.jpg" alt="Room two"></div>
+        <div class="image"><img src="Taguig/img6.jpg" alt="CSS"></div>
+        <div class="image"><img src="Taguig/img7.jpg" alt="Comlab"></div>
+        <div class="image"><img src="Taguig/img8.jpg" alt="HE one"></div>
+        <div class="image"><img src="Taguig/img9.jpg" alt="HE two"></div>
+        <div class="image"><img src="Taguig/img10.jpg" alt="Library"></div>
+        <div class="image"><img src="Taguig/img11.jpg" alt="Kitchen one"></div>
+        <div class="image"><img src="Taguig/img12.jpg" alt="Kitchen two"></div>
+      </div>
+
+  <div class="popup-image">
+    <span>&times;</span>
+    <img src="img1.jpg" alt="">
+  </div>
+
+  </div>
+
+  <div class="container">
+    <br>
+    <div class="oval-title-box">
+      <h1>Pasig Facilities</h1>
+    </div>
+
+      <div class="image-container">
+        <div class="image"><img src="Pasig/img1p.jpg" alt="Entrance"></div>
+        <div class="image"><img src="Pasig/img2p.jpg" alt="Main Hall"></div>
+        <div class="image"><img src="Pasig/img3p.jpg" alt="Student Lounge"></div>
+        <div class="image"><img src="Pasig/img4p.jpg" alt="Room one"></div>
+        <div class="image"><img src="Pasig/img5p.jpg" alt="Room two"></div>
+        <div class="image"><img src="Pasig/img6p.jpg" alt="CSS"></div>
+        <div class="image"><img src="Pasig/img7p.jpg" alt="Comlab"></div>
+        <div class="image"><img src="Pasig/img8p.jpg" alt="HE one"></div>
+        <div class="image"><img src="Pasig/img9p.jpg" alt="HE two"></div>
+        <div class="image"><img src="Pasig/img10p.jpg" alt="Library"></div>
+        <div class="image"><img src="Pasig/img11p.jpg" alt="Kitchen one"></div>
+        <div class="image"><img src="Pasig/img12p.jpg" alt="Kitchen two"></div>
+      </div>
+
+  <div class="popup-image">
+    <span>&times;</span>
+    <img src="img1.jpg" alt="">
+  </div>
+
+  </div>
+
+  <div class="asic-facilities">
+
+    <iframe width="750" height="450" src="asicfacilities.mp4" title="Asia Source iCollege HYMN" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </iframe>
+
+  </div>
+
+
+  <script>
+
+    document.querySelectorAll('.image-container img').forEach(image =>{
+      image.onclick = () =>{
+        document.querySelector('.popup-image').style.display = 'block';
+        document.querySelector('.popup-image img').src = image.getAttribute('src');
+      }
+    });
+
+    document.querySelector('.popup-image span').onclick = () =>{
+      document.querySelector('.popup-image').style.display = 'none';
+    }
+
+  </script>
+
+
+</body>
+</html>
